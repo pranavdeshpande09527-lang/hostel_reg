@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mess | Galaxy Boys Hostel</title>
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
+
+    body {
+        margin: 0;
+        font-family: "PT Sans", sans-serif;
+        font-size: 18px;
+        color: #24344a;
+
+        background-image: url('/home/pranav/learnig/web_tech_project/background.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+
+        min-height: 100vh;
+    }
+
+    header {
+        background-color: #18364f;
+        color: white;
+        text-align: center;
+        padding: 15px;
+    }
+
+    .brand {
+        font-size: 26px;
+        font-weight: bold;
+        margin: 0 0 10px;
+    }
+
+    nav {
+        text-align: center;
+    }
+
+    nav a {
+        color: white;
+        text-decoration: none;
+        padding: 8px 12px;
+        margin: 5px;
+        display: inline-block;
+    }
+
+    nav a:hover {
+        background-color: #315b7b;
+    }
+
+    main {
+        width: 85%;
+        max-width: 1000px;
+        margin: 30px auto;
+        padding: 25px;
+        background-color: white;
+        border-radius: 8px;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .button {
+        display: inline-block;
+        background-color: #185c85;
+        color: white;
+        padding: 10px 20px;
+        text-decoration: none;
+        border-radius: 4px;
+    }
+
+    .button:hover {
+        background-color: #103e5c;
+    }
+
+    .columns {
+        display: flex;
+        gap: 30px;
+    }
+
+    .columns section {
+        flex: 1;
+    }
+
+    .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    figure {
+        width: 300px;
+        margin: 0;
+    }
+
+    .charge {
+        background-color: #eaf3f9;
+        padding: 12px;
+        font-weight: bold;
+    }
+
+    footer {
+        background-color: #18364f;
+        color: white;
+        text-align: center;
+        padding: 15px;
+    }
+
+    /* Table */
+    .table-box {
+        overflow-x: auto;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    th,
+    td {
+        border: 1px solid #b8c6d1;
+        padding: 10px;
+        text-align: left;
+    }
+
+    thead {
+        background-color: #18364f;
+        color: white;
+    }
+
+    tbody th {
+        background-color: #eaf3f9;
+    }
+
+    /* Mobile */
+    @media (max-width: 650px) {
+        .columns {
+            flex-direction: column;
+        }
+
+        main {
+            width: 90%;
+            padding: 15px;
+        }
+    }
+</style>
+</head>
+<body>
+    <header>
+        <p class="brand">Galaxy Boys Hostel</p>
+        <nav aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="mess.html" aria-current="page">Mess</a>
+            <a href="hostel.html">Hostel</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Mess</h1>
+        <section>
+            <h2>Weekly Mess Menu</h2>
+            <p>This is a sample menu. Please confirm the current menu with the hostel.</p>
+            <div class="table-box" role="region" aria-label="Weekly menu, scroll horizontally on small screens" tabindex="0">
+                <table>
+                    <caption>Sample breakfast, lunch, and dinner menu</caption>
+                    <thead>
+                        <tr><th scope="col">Day</th><th scope="col">Breakfast</th><th scope="col">Lunch</th><th scope="col">Dinner</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><th scope="row">Monday</th><td>Poha and tea</td><td>Roti, dal, rice, mixed vegetables</td><td>Roti, dal, rice, aloo matar</td></tr>
+                        <tr><th scope="row">Tuesday</th><td>Upma and tea</td><td>Roti, rajma, rice, salad</td><td>Roti, dal, rice, cabbage sabzi</td></tr>
+                        <tr><th scope="row">Wednesday</th><td>Idli and sambar</td><td>Roti, dal, rice, bhindi</td><td>Vegetable pulao and curd</td></tr>
+                        <tr><th scope="row">Thursday</th><td>Paratha and curd</td><td>Roti, chole, rice, salad</td><td>Roti, dal, rice, mixed vegetables</td></tr>
+                        <tr><th scope="row">Friday</th><td>Poha and tea</td><td>Roti, dal, rice, aloo gobi</td><td>Roti, vegetable curry, rice</td></tr>
+                        <tr><th scope="row">Saturday</th><td>Dosa and chutney</td><td>Roti, dal, rice, seasonal vegetables</td><td>Khichdi, curd, papad</td></tr>
+                        <tr><th scope="row">Sunday</th><td>Puri and bhaji</td><td>Roti, paneer curry, rice, sweet</td><td>Roti, dal, rice, vegetable sabzi</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        <section>
+            <h2>Mess Charges</h2>
+            <p class="charge">Mess Charge: 3000Rs per month</p>
+        </section>
+        <section>
+            <h2>Mess Photos</h2>
+            <div class="gallery">
+                <figure><img src="/home/pranav/learnig/web_tech_project/mess3.jpeg" alt="Galaxy Boys Hostel mess, first view"><figcaption>Mess — view 1</figcaption></figure>
+                <figure><img src="/home/pranav/learnig/web_tech_project/mess2.jpeg" alt="Galaxy Boys Hostel mess, second view"><figcaption>Mess — view 2</figcaption></figure>
+            </div>
+        </section>
+    </main>
+
+    <footer>Galaxy Boys Hostel &bull; Wanadongri, Nagpur &bull; 84128 33105</footer>
+</body>
+</html>

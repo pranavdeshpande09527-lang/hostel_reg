@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Galaxy Boys Hostel</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font: 18px/1.6 "PT Sans", sans-serif;
+  color: #24344a;
+  background: #e8edf2 url('/home/pranav/learnig/web_tech_project/background.png')
+    center / cover no-repeat;
+}
+
+header,
+footer {
+  padding: 18px 20px;
+  color: white;
+  background: #18364f;
+  text-align: center;
+}
+
+.brand {
+  margin: 0 0 12px;
+  font-size: 26px;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+nav a {
+  padding: 8px 14px;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+nav a:hover,
+nav a[aria-current="page"] {
+  background: #315b7b;
+}
+
+main {
+  width: 92%;
+  max-width: 1100px;
+  margin: 32px auto;
+  padding: 28px;
+  background: white;
+  border-radius: 8px;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 32px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+a {
+  color: #155c8a;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.button {
+  display: inline-block;
+  padding: 11px 25px;
+  color: white;
+  background: #185c85;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+.button:hover {
+  background: #103e5c;
+}
+
+.columns,
+.gallery {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.columns > section,
+figure {
+  flex: 1;
+}
+
+figure {
+  min-width: 300px;
+  margin: 0;
+}
+
+.charge {
+  padding: 14px;
+  background: #eaf3f9;
+  font-weight: bold;
+}
+
+@media (max-width: 650px) {
+  main {
+    margin: 20px auto;
+    padding: 20px;
+  }
+
+  .columns {
+    flex-direction: column;
+  }
+
+  h1 {
+    font-size: 27px;
+  }
+}
+</style>
+</head>
+<body>
+    <header>
+        <p class="brand">Galaxy Boys Hostel</p>
+        <nav aria-label="Main navigation">
+            <a href="index.html" aria-current="page">Home</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="mess.html">Mess</a>
+            <a href="hostel.html">Hostel</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="columns">
+            <section>
+                <h1 class="pt-sans-bold">Galaxy Boys Hostel in Wanadongri,Nagpur</h1>
+                <p>A place to settle in, make friends, and feel at home while you focus on your studies.</p>
+                <a class="button" href="form.html">Enroll</a>
+            </section>
+            <section aria-label="Our location">
+                <img src="/home/pranav/learnig/web_tech_project/map.png" alt="Location map for Galaxy Boys Hostel in Wanadongri">
+                <p><strong>Address:</strong> opposite ycce college, Amar Nagar, Wanadongri ct, Wanadongri, Maharashtra 441110</p>
+                <p><strong>Phone:</strong> <a href="tel:+918412833105">84128 33105</a></p>
+            </section>
+        </div>
+    </main>
+
+    <footer>Galaxy Boys Hostel &bull; Wanadongri, Nagpur &bull; 84128 33105</footer>
+</body>
+</html>
